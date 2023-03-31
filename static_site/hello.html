@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <meta charset="UTF-8" /> 
+      <title>React Application</title> 
+   </head> 
+   <body> 
+      <div id="react-app"></div> 
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+      <script language="JavaScript"> 
+         element = React.createElement('h1', {}, 'Hello React!') // we can nested elements>>  element = React.createElement('div', {}, React.createElement('h1', {}, 'Hello React!'));
+
+         ReactDOM.render(element, document.getElementById('react-app')); 
+      </script> 
+   </body> 
+</html>
+
+<!--
+    NOTEE:
+React.createElement
+Used to create React elements. It expects three parameters −
+Element tag
+Element attributes as object
+Element content - It can contain nested React element as well
+------------------------------------------
+ReactDOM.render
+Used to render the element into the container. It expects two parameters −
+React Element OR JSX
+Root element of the webpage
+-------------------------------------------------------
+The render() method is called by React whenever a component's state or props change. 
+React uses a technique called "reconciliation" to efficiently update the DOM only for the parts of the component 
+tree that have changed, rather than re-rendering the entire tree.
+-->
+
