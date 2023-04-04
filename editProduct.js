@@ -20,7 +20,7 @@ function EditProduct() {
         <div className="product-div">
           <div className="product-div-left">
             <div className="img-container">
-              <img src={mainImg} alt="watch" />
+              <img src={mainImg} alt="Product" />
             </div>
             <div className="hover-container">
               {hoverImages.map((image, index) => (
